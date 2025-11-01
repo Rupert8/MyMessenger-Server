@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: MyMessenger-Server
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: gto06gto10
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+        default_schema: public
+jwt:
+  access-token-key: '{"kty":"oct","use":"sig","k":"rMbAFDt5VWBOzUaCg1BD-lkNiWMoJ9TMHYRi7TXfTOo","alg":"HS256"}'
+  refresh-token-key: '{"kty":"oct","use":"sig","k":"6insoAeCq-mpEqG-TfPHyKRAQRFCkMHPiMMFusuVDlk","alg":"HS256"}'
