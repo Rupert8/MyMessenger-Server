@@ -3,8 +3,8 @@ spring:
     name: MyMessenger-Server
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
-    username: postgres
-    password: gto06gto10
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:postgres}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -13,7 +13,10 @@ spring:
       hibernate:
         format_sql: true
         show_sql: true
-        default_schema: public
+        default_schema: messenger
 jwt:
-  access-token-key: '{"kty":"oct","use":"sig","k":"rMbAFDt5VWBOzUaCg1BD-lkNiWMoJ9TMHYRi7TXfTOo","alg":"HS256"}'
-  refresh-token-key: '{"kty":"oct","use":"sig","k":"6insoAeCq-mpEqG-TfPHyKRAQRFCkMHPiMMFusuVDlk","alg":"HS256"}'
+    access-token-key: ${ACCESS_JWT_TOKEN}
+    refresh-token-key: ${REFRESH_JWT_TOKEN}
+logging:
+  level:
+    org.springframework.security: trace

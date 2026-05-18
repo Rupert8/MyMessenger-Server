@@ -1,0 +1,3 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://messenger-db:5432/postgres
