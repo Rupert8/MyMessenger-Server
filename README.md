@@ -13,7 +13,6 @@ The robust backend infrastructure for a client-server messenger ecosystem, built
 * **Lombok**
 * **Maven**
 * **Docker & Docker Compose** (Containerization & Local Orchestration)
-* 
 
 ---
 
