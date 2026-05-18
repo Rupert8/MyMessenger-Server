@@ -43,3 +43,11 @@ Execute the following commands in your host terminal to flush stale persistent s
 docker compose down -v
 docker compose up --build
 ```
+
+### 3. Connect the Client Interface
+
+To interact with this backend, clone and run the desktop user interface application built with JavaFX and Maven. You can find the client repository and full installation details here:
+
+👉 [MyMessenger-Client Repository](https://github.com/Rupert8/MyMessenger-Client)
+
+Launch the desktop application to register accounts, login  and begin real-time communication.
