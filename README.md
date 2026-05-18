@@ -28,7 +28,6 @@ To eliminate stateful server overhead and mitigate risks, the system implements 
 The repository features automated environment provisioning configurations. To initialize the database cluster and target server instance in isolated network environments, execute the steps below:
 
 ### 1. Clone Repository
-Create a hidden file named exactly `.env` within the root project directory (directly adjacent to `docker-compose.yml`) to store infrastructure credentials securely:
 
 ```env
 git clone https://github.com/Rupert8/MyMessenger-Server.git
