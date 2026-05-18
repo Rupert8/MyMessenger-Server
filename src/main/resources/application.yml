@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: MyMessenger-Server
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:postgres}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+        default_schema: messenger
+jwt:
+    access-token-key: ${ACCESS_JWT_TOKEN}
+    refresh-token-key: ${REFRESH_JWT_TOKEN}
+logging:
+  level:
+    org.springframework.security: trace
