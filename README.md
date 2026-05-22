@@ -58,3 +58,9 @@ To interact with this backend, clone and run the desktop user interface applicat
 👉 [MyMessenger-Client Repository](https://github.com/Rupert8/MyMessenger-Client)
 
 Launch the desktop application to register accounts, login  and begin real-time communication.
+
+# MyMessenger-Server
+
+![Status](https://img.shields.io/badge/Status-In_Progress-orange?style=for-the-badge&logo=github)
+
+> ⚠️ **Note:** This project is currently under active development and testing. Some features may be unstable, and bugs may occur in the code.

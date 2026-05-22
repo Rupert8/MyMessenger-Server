@@ -35,7 +35,7 @@ public class JwtLogoutFilter extends OncePerRequestFilter {
                 if (context.getAuthentication() instanceof PreAuthenticatedAuthenticationToken
                         && context.getAuthentication().getAuthorities().contains(new SimpleGrantedAuthority("JWT_LOGOUT"))
                         && context.getAuthentication().getPrincipal() instanceof TokenUser user) {
-                    this.jdbcTemplate.update("insert into deactivated_token (id, keep_until) values (?, ?)",
+                    this.jdbcTemplate.update("insert into messenger.deactivated_token(id, keep_until) values (?, ?)",
                             user.getToken().id(), Date.from(user.getToken().expiredAt()));
 
                     response.setStatus(HttpServletResponse.SC_NO_CONTENT);
